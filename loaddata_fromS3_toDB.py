@@ -83,7 +83,7 @@ def get_latest_data_from_s3():
 dag = DAG(
     'S3_to_DB',
     start_date=datetime.datetime(2021, 11, 18),
-    schedule_interval="*/5 * * * *",
+    schedule_interval="*/10 * * * *",
     catchup=False
 )
 

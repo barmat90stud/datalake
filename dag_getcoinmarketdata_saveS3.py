@@ -49,7 +49,7 @@ def get_coinmarketcap_data():
 dag = DAG(
     'load_coin_data_to_S3_2',
     start_date=datetime.datetime(2021, 11, 18),
-    schedule_interval="*/5 * * * *",
+    schedule_interval="*/10 * * * *",
     catchup=False
 )
 
